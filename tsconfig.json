@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "outDir": "build",
+    "target": "es2021",
+    "lib": ["es2021"],
+    "rootDir": ".",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"],
+    "strict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "plugins": [{
+      "transform": "typescript-rtti/dist/transformer"
+    }],
+    "resolveJsonModule": true
+  },
+  "include": [
+    "bin/**/*",
+    "src/**/*",
+    "test/**/*",
+    "kernel/**/*",
+    "infrastructure/**/*",
+    "index.ts",
+  ],
+  "exclude": ["/node_modules/"],
+}
